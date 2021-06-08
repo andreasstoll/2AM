@@ -1,0 +1,2 @@
+2021-06-08 17:45:22,232 -WARNING - ggplot_log;ggplot({'x': 'wt', 'y': 'mpg'})
+2021-06-08 17:45:22,232 -WARNING - ggplot_log;geom_line({'color': 'red'})
