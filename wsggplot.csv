@@ -1,0 +1,2 @@
+2021-08-09 16:05:56,648;WARNING;ggplot_log_csv;ggplot;ggplot({'x': 'table', 'y': 'price'})
+2021-08-09 16:05:56,650;WARNING;ggplot_log_csv;geom_line;geom_line({'color': 'red'})
