@@ -17,12 +17,17 @@ def ggplot(data, *args, **kwargs):
     """Gibt ein ggplot-Objekt mit aes zurück und logt dieses gemäss Decorator logger"""
     return p9.ggplot(data,p9.aes(*args, **kwargs))
 
+@logger
+def stat_linreg():
+    return p9.stat_smooth(method='lm')
+
 TO_LOG = [
     'geom_point',
     'geom_line',
     'geom_histogram',
     'geom_bar',
-    'geom_boxplot'
+    'geom_boxplot',
+    'stat_smooth'
 ]
 
 #Wendet den Decorator logger auf alle Funktionen in TO_Log an
@@ -33,6 +38,6 @@ for name in TO_LOG:
 
 if __name__ == "__main__":
 
-    a=ggplot(mtcars,x="wt")
-    a=a+geom_histogram(color='pink')
+    a=ggplot(mtcars,x="wt",y="mpg")
+    a=a+geom_point(color="red")+stat_linreg()
     print(a)
