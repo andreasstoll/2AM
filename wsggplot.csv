@@ -120,3 +120,5 @@
 2021-08-10 16:29:46,905;WARNING;ggplot_log_csv;ggplot;ggplot({'x': 'carat', 'y': 'price', 'color': 'cut'})
 2021-08-10 16:29:46,907;WARNING;ggplot_log_csv;geom_point;geom_point({})
 2021-08-10 16:29:46,909;WARNING;ggplot_log_csv;stat_linreg;stat_linreg({})
+2021-08-10 17:17:55,943;WARNING;ggplot_log_csv;ggplot;ggplot({'x': 'table', 'y': 'depth', 'color': 'color'})
+2021-08-10 17:17:55,945;WARNING;ggplot_log_csv;geom_point;geom_point({})
