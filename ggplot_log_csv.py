@@ -21,20 +21,10 @@ def ggplot(data, *args, **kwargs):
 def stat_linreg():
     return p9.stat_smooth(method='lm')
 
-TO_LOG = [
-    'geom_point',
-    'geom_line',
-    'geom_histogram',
-    'geom_bar',
-    'geom_boxplot',
-    'stat_smooth'
-]
 
-#Wendet den Decorator logger auf alle Funktionen in TO_Log an
-for name in TO_LOG: 
-    globals()[name] = logger(getattr(p9, name))
-
-
+geom_point = logger(p9.geom_point)
+geom_line = logger(p9.geom_line)
+geom_bar= logger(p9.geom_bar)
 
 if __name__ == "__main__":
 
